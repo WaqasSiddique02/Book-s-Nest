@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Cart.css">
+    <title>My Cart</title>
+</head>
+
+<body>
+    <div class="header">
+        <div id="heads">
+            <h1 id="mhead1">Book's Nest</h1>
+            <h2 id="mhead2">"Embrace diversity and broaden your perspectives with our <br> thought-provkening selection
+                of global literature."</h2>
+        </div>
+        <div class="navbar">
+            <a id="nav" href="../Home page/Homepage.html">Home</a>
+            <a id="nav"> | </a>
+            <a id="nav" href="../Browse/Browse.html">Browse</a>
+            <a id="nav"> | </a>
+            <a id="nav" href="#foot">About us</a>
+            <a id="nav"> | </a>
+            <a id="nav" href="../Cart Page/Cart.html">My Cart</a>
+            <a id="nav"> | </a>
+            <input id="search" for="search" type="text" placeholder="Search...">
+            <div class="user-profile" id="userProfile">
+                <img src="./../Images/2476166.png" alt="User Avatar">
+                <div class="dropdown-content" id="dropdownContent">
+                    <a href="#">Edit Profile</a>
+                    <a href="#">Report</a>
+                    <a href="../Login Page/index.html" id="signOut">Sign Out</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="cart-container">
+        <div class="ycart">
+            <h2>Your Cart</h2>
+        </div>
+    
+        <div class="quantity">
+            <button id="decrementBtn">-</button>
+            <input id="quantityInput" type="text" value="1" readonly>
+            <button id="incrementBtn">+</button>
+        </div>
+    
+        <div>
+            <p id="tic">Total Items in Cart: <span class="cart-count">1</span></p>
+        </div>
+    
+        <div class="options">
+            <label for="size">Size:</label>
+            <select id="size" name="size">
+                <option value="small">Small</option>
+                <option value="medium">Medium</option>
+                <option value="large">Large</option>
+            </select>
+    
+            <label for="Language">Language:</label>
+            <select id="Language" name="Language">
+                <option value="red">English</option>
+                <option value="blue">Urdu</option>
+                <option value="green">Persian</option>
+            </select>
+        </div>
+    
+        <div class="subtotal">
+            <p>Subtotal: $<span id="subtotalAmount">10.00</span></p>
+        </div>
+    
+        <button class="checkoutBtn">Proceed</button>
+    </div>
+    
+<br><br>
+<br><br>
+<br><br>
+    <footer id="foot">
+        <hr style="height:2px;border-width:0;color:gray;background-color:gray">
+        <div class="about-us">
+            <p>Our mission is to make reading accessible and affordable for everyone. We believe that everyone should
+                have the opportunity to enjoy the benefits of reading.</p>
+            <p>&copy;2023 All rights Reserved to Book's Nest</p>
+        </div>
+        <center><a href="https://www.facebook.com"><img id="logo" src="./../Images/facebook.png" alt="Facebook"></a>
+            <a href="https://www.instagram.com"><img id="logo" src="./../Images/instagram.png" alt="Instagram"></a>
+            <a href="https://www.linkedin.com"><img id="logo" src="./../Images/linkedin.jpg" alt="LinkedIn"></a>
+        </center>
+    </footer>
+</body>
+
+</html>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const decrementBtn = document.getElementById("decrementBtn");
+        const incrementBtn = document.getElementById("incrementBtn");
+        const quantityInput = document.getElementById("quantityInput");
+
+        decrementBtn.addEventListener("click", function () {
+    
+            if (quantityInput.value > 1) {
+                quantityInput.value = parseInt(quantityInput.value) - 1;
+            }
+        });
+
+        incrementBtn.addEventListener("click", function () {
+
+            quantityInput.value = parseInt(quantityInput.value) + 1;
+        });
+    });
+</script>

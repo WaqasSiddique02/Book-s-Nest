@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Cart.css">
+    <title>Cart</title>
+</head>
+
+<body>
+    <div class="header">
+        <div id="heads">
+            <h1 id="mhead1">Book's Nest</h1>
+            <h2 id="mhead2">"Embrace diversity and broaden your perspectives with our <br> thought-provoking selection
+                of global literature."</h2>
+        </div>
+
+        <div class="navbar">
+            <a id="nav" href="../Home page/Homepage.html">Home</a>
+            <a id="nav"> | </a>
+            <a id="nav" href="../Browse/Browse.html">Browse</a>
+            <a id="nav"> | </a>
+            <a id="nav" href="#foot">About us</a>
+            <a id="nav"> | </a>
+            <a id="nav" href="../My Cart/Cart.html">My Cart</a>
+            <a id="nav"> | </a>
+            <input id="search" for="search" type="text" placeholder="Search...">
+            <div class="user-profile" id="userProfile">
+                <img src="./../Images/2476166.png" alt="User Avatar">
+                <div class="dropdown-content" id="dropdownContent">
+                    <a href="#">Edit Profile</a>
+                    <a href="#">Report</a>
+                    <a href="../Login Page/index.html" id="signOut">Sign Out</a>
+                </div>
+            </div>
+        </div>
+        <hr style="height:2px; border-width:0; margin-top: -60px;  color:gray; background-color:gray;">
+    </div>
+
+    <h2 id="trend">Trending</h2>
+    <br><br>
+    <div class="clearfix"></div>
+
+
+    <div class="trending-pair">
+        <img src="../Browse/Manga/Manga (1).jpeg" alt="Book 1">
+        <img src="../Browse/Manga/Manga (2).jpeg" alt="Book 2">
+    </div>
+
+    <div class="trending-pair">
+        <img src="../Browse/Manga/Manga (3).jpeg" alt="Book 3">
+        <img src="../Browse/Manga/Manga (4).jpeg" alt="Book 4">
+    </div>
+
+    <div class="trending-pair">
+        <img src="../Browse/Manga/Manga (5).jpeg" alt="Book 5">
+        <img src="../Browse/Manga/Manga (6).jpeg" alt="Book 6">
+    </div>
+
+
+    <div id="cartContent">
+
+    </div>
+    <button id="bookNowButton" onclick="bookNow()">Place Order</button>
+    <br><br><br><br><br><br><br><br>
+    <footer id="foot">
+        <hr style="height:2px;border-width:0;color:gray;background-color:gray">
+        <div class="about-us">
+            <p>Our mission is to make reading accessible and affordable for everyone. We believe that everyone should
+                have the opportunity to enjoy the benefits of reading.</p>
+            <p>&copy;2023 All rights Reserved to Book's Nest</p>
+        </div>
+        <center><a href="https://www.facebook.com"><img id="logo" src="./../Images/facebook.png" alt="Facebook"></a>
+            <a href="https://www.instagram.com"><img id="logo" src="./../Images/instagram.png" alt="Instagram"></a>
+            <a href="https://www.linkedin.com"><img id="logo" src="./../Images/linkedin.jpg" alt="LinkedIn"></a>
+        </center>
+    </footer>
+</body>
+
+</html>
+
+<script>
+    function getParameterByName(name, url) {
+        if (!url) url = window.location.href;
+        name = name.replace(/[\[\]]/g, "\\$&");
+        var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
+            results = regex.exec(url);
+        if (!results) return null;
+        if (!results[2]) return '';
+        return decodeURIComponent(results[2].replace(/\+/g, " "));
+    }
+
+    var imageUrl = getParameterByName('image');
+    var bookName = getParameterByName('name');
+    var cartContent = document.getElementById('cartContent');
+    cartContent.innerHTML = '<div style="display: flex; align-items: center;">' +
+        '<img src="' + imageUrl + '" alt="' + bookName + '" style="width: 320px; height: 450px; margin-right: 20px;">' +
+        '<div>' +
+        '<h1  style="font-size: 24px; margin-top:-190px">' + bookName + '</h1>' +
+        '<h3 style="margin-top: 20px; text-style: bold">Description:</h3>' +
+        '<p style="width:220px; margin-top:20px">Fiction is a literary genre that focuses on stories that involve high-stakes, high-energy, and fast-paced events. This genre includes a wide range of subgenres, such as spy novels, adventure stories, tales of terror and intrigue and mysteries.</p>'
+    '</div>' +
+    '</div>';
+
+    function bookNow() {
+        alert("Your Order Placed Successfully");
+    }
+</script>

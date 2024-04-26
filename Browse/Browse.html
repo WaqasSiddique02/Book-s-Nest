@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Browse.css">
+    <title>Browse</title>
+</head>
+
+<body>
+    <div class="header">
+        <div id="heads">
+            <h1 id="mhead1">Book's Nest</h1>
+            <h2 id="mhead2">"Embrace diversity and broaden your perspectives with our <br> thought-provkening selection
+                of global literature."</h2>
+        </div>
+        <div class="navbar">
+            <a id="nav" href="../Home page/Homepage.html">Home</a>
+            <a id="nav"> | </a>
+            <a id="nav" href="../Browse/Browse.html">Browse</a>
+            <a id="nav"> | </a>
+            <a id="nav" href="#foot">About us</a>
+            <a id="nav"> | </a> 
+            <a id="nav" href="../My Cart/Cart.html">My Cart</a> 
+            <a id="nav"> | </a>
+            <input id="search" for="search" type="text" placeholder="Search...">
+            <div class="user-profile" id="userProfile">
+                <img src="./../Images/2476166.png" alt="User Avatar">
+                <div class="dropdown-content" id="dropdownContent">
+                    <a href="#">Edit Profile</a>
+                    <a href="#">Report</a>
+                    <a href="../Login Page/index.html" id="signOut">Sign Out</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <main>
+        <div class="search-container">
+            <div class="filters">
+                <div class="dropdown">
+                    <button class="dropdown-toggle"><a id="all" href="../Browse/Browse.html">All</a></button>
+                </div>
+                <div class="dropdown">
+                    <button class="dropdown-toggle">Genre</button>
+                    <ul class="dropdown-menu">
+                        <li><a id="options" href="#action">Action</a></li>
+                        <li><a id="options" href="#novel">Novel</a></li>
+                        <li><a id="options" href="#latest">Latest</a></li>
+                        <li><a id="options" href="#mangaa">Manga</a></li>
+                    </ul>
+                </div>
+                <div class="dropdown">
+                    <button class="dropdown-toggle">Rating</button>
+                    <ul class="dropdown-menu">
+                        <li><a id="options" href="#">5-4</a></li>
+                        <li><a id="options" href="#">4-3</a></li>
+                        <li><a id="options" href="#">3-2</a></li>
+                        <li><a id="options" href="#">2-1</a></li>
+                    </ul>
+                </div>
+                <div class="dropdown">
+                    <button class="dropdown-toggle">Year</button>
+                    <ul class="dropdown-menu">
+                        <li><a id="options" href="#">2023</a></li>
+                        <li><a id="options" href="#">2022</a></li>
+                        <li><a id="options" href="#">2021</a></li>
+                        <li><a id="options" href="#">2020</a></li>
+                    </ul>
+                </div>
+                <div class="dropdown">
+                    <button class="dropdown-toggle">Languages</button>
+                    <ul class="dropdown-menu">
+                        <li><a id="options" href="#">English</a></li>
+                        <li><a id="options" href="#">Spanish</a></li>
+                        <li><a id="options" href="#">French</a></li>
+                    </ul>
+                </div>
+                <div class="dropdown">
+                    <button class="dropdown-toggle">Order by</button>
+                    <ul class="dropdown-menu">
+                        <li><a id="options" href="#">Release Date</a></li>
+                        <li><a id="options" href="#">Rating</a></li>
+                        <li><a id="options" href="#">Popularity</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="search-bar">
+            <input type="text" name="q" placeholder="Search">
+            <button type="submit"><img src="https://img.icons8.com/ios-glyphs/30/000000/search.png"
+                    alt="Search"></button>
+        </div>
+        <br><br>
+        <div class="headingbox">
+            <h1 id="mainhead"> Latest Release </h1>
+        </div>
+        <br><br>
+        <div class="grid-1">
+            <div class="book-container">
+                <a href="../Cart%20Page/Cart.html?image=../Images/book-7.png&name=Constitution%20of%20India">
+                    <img class="book-image" id="latest" src="../Images/book-7.png" alt="Constitution of India">
+                    <p class="book-content">Constitution of India</p>
+                </a>
+            </div>
+            <div class="book-container">
+                <a href="../Cart%20Page/Cart.html?image=../Images/book-3.jpg&name=Marvel:%20Comics">
+                    <img class="book-image" src="../Images/book-3.jpg" alt="Marvel: Comics">
+                    <p class="book-content">Marvel: Comics</p>
+                </a>
+            </div>
+            <div class="book-container">
+                <a href="../Cart%20Page/Cart.html?image=../Images/book-8.jpg&name=Novel:%20Wings%20of%20Fire">
+                    <img class="book-image" src="../Images/book-8.jpg" alt="Novel: Wings of Fire">
+                    <p class="book-content">Novel: Wings of Fire</p>
+                </a>
+            </div>
+            <div class="book-container">
+                <a href="../Cart%20Page/Cart.html?image=../Images/book-1.jpg&name=Story:%20Killer%20of%20the%20Moon">
+                    <img class="book-image" src="../Images/book-1.jpg" alt="Story: Killer of the Moon">
+                    <p class="book-content">Story: Killer of the Moon</p>
+                </a>
+            </div>
+        </div>
+        <div class="grid-1">
+            <div class="book-container">
+                <a href="../Cart%20Page/Cart.html?image=../Images/book-6.jpg&name=Horror:Dont%20go%20there">
+                    <img class="book-image" src="../Images/book-6.jpg" alt="Horror: Dont go there">
+                    <p class="book-content">Horror: Dont go there</p>
+                </a>
+            </div>
+            <div class="book-container">
+                <a href="../Cart%20Page/Cart.html?image=../Images/book%2013.jpg&name=Guide:Out%20of%20Woods">
+                    <img class="book-image" src="../Images/book%2013.jpg" alt="Guide: Out of Woods">
+                    <p class="book-content">Guide: Out of Woods</p>
+                </a>
+            </div>
+            <div class="book-container">
+                <a href="../Cart%20Page/Cart.html?image=../Images/book%2010.jpg&name=Iqbal:Falsafa%20Iqbal">
+                    <img class="book-image" src="../Images/book%2010.jpg" alt="Iqbal: Falsafa Iqbal">
+                    <p class="book-content">Iqbal: Falsafa Iqbal</p>
+                </a>
+            </div>
+            <div class="book-container">
+                <a href="../Cart%20Page/Cart.html?image=../Images/book%2011.avif&name=Fiction:Stars%20and%20souls">
+                    <img class="book-image" src="../Images/book%2011.avif" alt="Fiction: Stars and souls">
+                    <p class="book-content">Fiction: Stars and souls</p>
+                </a>
+            </div>
+        </div>
+        
+        <br><br>
+        <div class="headingbox">
+            <h1 id="mainhead">Manga Collection</h1>
+        </div>
+        <br><br>
+        <div class="grid-1">
+            <div class="book-container">
+                <a href="../Cart%20Page/Cart.html?image=../Browse/Manga/Manga%20(1).jpeg&name=Chainsaw%20Man">
+                    <img class="book-image" id="mangaa" src="../Browse/Manga/Manga (1).jpeg" alt="Chainsaw Man">
+                    <p class="book-content">Chainsaw Man</p>
+                </a>
+            </div>
+            <div class="book-container">
+                <a href="../Cart%20Page/Cart.html?image=../Browse/Manga/Manga%20(2).jpeg&name=My%20Hero%20Academia">
+                    <img class="book-image" src="../Browse/Manga/Manga (2).jpeg" alt="My Hero Academia">
+                    <p class="book-content">My Hero Academia</p>
+                </a>
+            </div>
+            <div class="book-container">
+                <a href="../Cart%20Page/Cart.html?image=../Browse/Manga/Manga%20(3).jpeg&name=Naruto">
+                    <img class="book-image" src="../Browse/Manga/Manga (3).jpeg" alt="Naruto">
+                    <p class="book-content">Naruto</p>
+                </a>
+            </div>
+            <div class="book-container">
+                <a href="../Cart%20Page/Cart.html?image=../Browse/Manga/Manga%20(4).jpeg&name=Haikyuu">
+                    <img class="book-image" src="../Browse/Manga/Manga (4).jpeg" alt="Haikyuu">
+                    <p class="book-content">Haikyuu</p>
+                </a>
+            </div>
+        </div>
+        
+
+        <div class="grid-1">
+            <div class="book-container">
+                <a href="../Cart%20Page/Cart.html?image=../Browse/Manga/Manga%20(5).jpeg&name=Demon%20Slayer">
+                    <img class="book-image" src="../Browse/Manga/Manga (5).jpeg" alt="Demon Slayer">
+                    <p class="book-content">Demon Slayer</p>
+                </a>
+            </div>
+            <div class="book-container">
+                <a href="../Cart%20Page/Cart.html?image=../Browse/Manga/Manga%20(6).jpeg&name=Death%20Note">
+                    <img class="book-image" src="../Browse/Manga/Manga (6).jpeg" alt="Death Note">
+                    <p class="book-content">Death Note</p>
+                </a>
+            </div>
+            <div class="book-container">
+                <a href="../Cart%20Page/Cart.html?image=../Browse/Manga/Manga%20(7).jpeg&name=Berserk">
+                    <img class="book-image" src="../Browse/Manga/Manga (7).jpeg" alt="Berserk">
+                    <p class="book-content">Berserk</p>
+                </a>
+            </div>
+            <div class="book-container">
+                <a href="../Cart%20Page/Cart.html?image=../Browse/Manga/Manga%20(8).jpeg&name=Jujutsu%20Kaisen">
+                    <img class="book-image" src="../Browse/Manga/Manga (8).jpeg" alt="Jujutsu Kaisen">
+                    <p class="book-content">Jujutsu Kaisen</p>
+                </a>
+            </div>
+        </div>
+        
+
+        <br><br>
+        <div class="headingbox">
+            <h1 id="mainhead">Action Collection</h1>
+        </div>
+        <br><br>
+        <div class="grid-1">
+            <a href="../Cart%20Page/Cart.html?image=../Browse/Action/Action%201.jpg&name=Revenge%20Book">
+                <div class="book-container">
+                    <img class="book-image" id="action" src="../Browse/Action/Action 1.jpg" alt="Revenge Book">
+                    <p class="book-content">Revenge Book</p>
+                </div>
+            </a>
+            
+            <a href="../Cart%20Page/Cart.html?image=../Browse/Action/Action%202.jpg&name=The%20King%20of%20Drugs">
+                <div class="book-container">
+                    <img class="book-image" src="../Browse/Action/Action 2.jpg" alt="The King of Drugs">
+                    <p class="book-content">The King of Drugs</p>
+                </div>
+            </a>
+            
+            <a href="../Cart%20Page/Cart.html?image=../Browse/Action/Action%203.webp&name=Red%20River%20Seven">
+                <div class="book-container">
+                    <img class="book-image" src="../Browse/Action/Action 3.webp" alt="Red River Seven">
+                    <p class="book-content">Red River Seven</p>
+                </div>
+            </a>
+            
+            <a href="../Cart%20Page/Cart.html?image=../Browse/Action/Action%204.jpg&name=The%20Section%20Track">
+                <div class="book-container">
+                    <img class="book-image" src="../Browse/Action/Action 4.jpg" alt="The Section Track">
+                    <p class="book-content">The Section Track</p>
+                </div>
+            </a>
+            
+        </div>
+
+        <div class="grid-1">
+            <a href="../Cart%20Page/Cart.html?image=../Browse/Action/Action%205.jpg&name=Without%20a%20Track">
+                <div class="book-container">
+                    <img class="book-image" src="../Browse/Action/Action 5.jpg" alt="Without a Track">
+                    <p class="book-content">Without a Track</p>
+                </div>
+            </a>
+            
+            <a href="../Cart%20Page/Cart.html?image=../Browse/Action/Action%206.webp&name=Death%20Island">
+                <div class="book-container">
+                    <img class="book-image" src="../Browse/Action/Action 6.webp" alt="Death Island">
+                    <p class="book-content">Death Island</p>
+                </div>
+            </a>
+            
+            <a href="../Cart%20Page/Cart.html?image=../Browse/Action/Action%207.webp&name=Dark%20Collosus">
+                <div class="book-container">
+                    <img class="book-image" src="../Browse/Action/Action 7.webp" alt="Dark Collosus">
+                    <p class="book-content">Dark Collosus</p>
+                </div>
+            </a>
+            
+            <a href="../Cart%20Page/Cart.html?image=../Browse/Action/Action%208.jpg&name=Power%20of%20Titans">
+                <div class="book-container">
+                    <img class="book-image" src="../Browse/Action/Action 8.jpg" alt="Power of Titans">
+                    <p class="book-content">Power of Titans</p>
+                </div>
+            </a>
+            
+        </div>
+
+        <br><br>
+        <div class="headingbox">
+            <h1 id="mainhead">Novel Collection</h1>
+        </div>
+        <br><br>
+        <div class="grid-1">
+            <a href="../Cart%20Page/Cart.html?image=../Browse/Novel/novel%201.jpg&name=Moon%20Valley">
+                <div class="book-container">
+                    <img class="book-image" id="novel" src="../Browse/Novel/novel 1.jpg" alt="Moon Valley">
+                    <p class="book-content">Moon Valley</p>
+                </div>
+            </a>            
+            <a href="../Cart%20Page/Cart.html?image=../Browse/Novel/novel%202.jpg&name=The%20Moon%20Light">
+                <div class="book-container">
+                    <img class="book-image" src="../Browse/Novel/novel 2.jpg" alt="The Moon Light">
+                    <p class="book-content">The Moon Light</p>
+                </div>
+            </a>
+            
+            <a href="../Cart%20Page/Cart.html?image=../Browse/Novel/novel%203.jpg&name=The%20Missing%20Person">
+                <div class="book-container">
+                    <img class="book-image" src="../Browse/Novel/novel 3.jpg" alt="The Missing Person">
+                    <p class="book-content">The Missing Person</p>
+                </div>
+            </a>
+            
+            <a href="../Cart%20Page/Cart.html?image=../Browse/Novel/novel%204.jpg&name=Curse%20of%20Infinit">
+                <div class="book-container">
+                    <img class="book-image" src="../Browse/Novel/novel 4.jpg" alt="Curse of Infinit">
+                    <p class="book-content">Curse of Infinit</p>
+                </div>
+            </a>
+            
+        </div>
+
+        <div class="grid-1">
+            <a href="../Cart%20Page/Cart.html?image=../Browse/Novel/novel%206.jpg&name=Fallen%20Gates">
+                <div class="book-container">
+                    <img class="book-image" src="../Browse/Novel/novel 6.jpg" alt="Fallen Gates">
+                    <p class="book-content">Fallen Gates</p>
+                </div>
+            </a>
+            
+            <a href="../Cart%20Page/Cart.html?image=../Browse/Novel/novel%207.jpg&name=Ulf%20and%20the%20Sword%20of%20Thor">
+                <div class="book-container">
+                    <img class="book-image" src="../Browse/Novel/novel 7.webp" alt="Threads - Ulf and the Sword of Thor">
+                    <p class="book-content">Threads</p>
+                </div>
+            </a>
+            
+            <a href="../Cart%20Page/Cart.html?image=../Browse/Novel/novel%208.jpg&name=Ulf%20and%20the%20Sword%20of%20Thor">
+                <div class="book-container">
+                    <img class="book-image" src="../Browse/Novel/novel 8.jpg" alt="Ulf and the Sword of Thor">
+                    <p class="book-content">Ulf and the Sword of Thor</p>
+                </div>
+            </a>
+            
+            <a href="../Cart%20Page/Cart.html?image=../Browse/Novel/novel%205.jpg&name=Ulf%20and%20the%20Sword%20of%20Thor">
+                <div class="book-container">
+                    <img class="book-image" src="../Browse/Novel/novel 5.jpg">
+                    <p class="book-content">Ulf and the Sword of Thor</p>
+                </div>
+            </a>
+            
+        </div>
+    </main>
+
+    <footer id="foot">
+        <hr style="height:2px;border-width:0;color:gray;background-color:gray">
+        <div class="about-us">
+            <p>Our mission is to make reading accessible and affordable for everyone. We believe that everyone should
+                have the opportunity to enjoy the benefits of reading.</p>
+            <p>&copy;2023 All rights Reserved to Book's Nest</p>
+        </div>
+        <center><a href="https://www.facebook.com"><img id="logo" src="./../Images/facebook.png" alt="Facebook"></a>
+            <a href="https://www.instagram.com"><img id="logo" src="./../Images/instagram.png" alt="Instagram"></a>
+            <a href="https://www.linkedin.com"><img id="logo" src="./../Images/linkedin.jpg" alt="LinkedIn"></a>
+        </center>
+    </footer>
+</body>
+
+</html>
